@@ -1,0 +1,118 @@
+@font-face {
+    font-family: roboto;
+    src: url("assets/Roboto/Roboto-VariableFont_wdth\,wght.ttf");
+    font-weight: 400;
+}
+body{
+  background: linear-gradient(to right,#250a0a,#4f215d);
+    color: whitesmoke;
+    font-family: roboto;
+    
+}
+h1{
+   margin-left: 40px; 
+   margin-bottom:50px;
+   font-weight: 300;
+
+}
+table{
+    width: 95%;
+    text-align:left;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-collapse: collapse;
+
+}
+#table-head{
+    color: white;
+    font-size: larger;
+    background-color: rgba(243, 237, 237, 0.265);
+    opacity: 0.8; 
+}
+tr{
+    height: 50px;
+}
+td:last-child:hover{
+    cursor: pointer;
+}
+#addBook{
+    position:absolute;
+    margin-top: 20px;
+    right: 40px;
+    background-color: rgba(243, 237, 237, 0.265);  
+    opacity: 0.7; 
+    height:40px;
+    width: 150px;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    font-size: larger;
+}
+
+form{
+    display:none;
+    height: 320px;
+    width:30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    border-radius:5%;
+    border-style: groove;
+    border-color: rgb(134, 128, 128);
+   /*background: linear-gradient(to right,#250a0a,#4f215d);*/
+   background-color:transparent;
+   /*background-color:#3b13138d;*/
+   
+}
+fieldset{
+    border-style: none;
+    width:90%;
+}
+input{
+    width:100%;
+    height:25px;
+    
+}
+#read{
+    display: block;
+    margin: 0 auto;
+    width:12%;
+}
+#submitBook{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin: 0 auto;
+    height: 35px;
+    color: white;
+    background-color: rgba(243, 237, 237, 0.265); 
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    font-size: large;
+}
+#submitBook:hover,#addBook:hover{
+    border-style:solid;
+    border-color: white; 
+    cursor: pointer;
+}
+.blur-component{
+    opacity:0.2
+}
+.table-row td{
+    color:white;
+}
+
+@media (max-width:480px) {
+    form{
+        width: 85%;
+    }
+    table{
+        font-size: small;
+    }
+}
+

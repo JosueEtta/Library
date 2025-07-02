@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="qindex.js" defer></script>
+    <title>Document</title>
+</head>
+<body  id="bodyBox">
+    <h1 id="heading">Digital Library</h1>  
+    <table id="table">
+        <tbody>
+           <tr id="table-head"> 
+            <th>Book ID</th>
+            <th>Book Name</th>
+            <th>Author</th>
+            <th>Number of pages</th>
+            <th>Read</th>
+            <th>Delete</th>
+         </tr> 
+          <!--Table data will be created with the DOM-->
+        </tbody>
+    </table>
+    <button id="addBook">Add book</button>
+    <form id="formBox">
+        <fieldset>
+            <label for="bookName">Book Name</label><br>
+            <input type="text" id="name" required><br>
+        </fieldset>
+       <fieldset>
+        <label for="author">Author</label><br>
+        <input type="text" id="author" required><br>
+       </fieldset>
+       <fieldset>
+        <label for="pageNumber">Number of pages</label><br>
+        <input type="number" id="pageNumber" required><br>
+       </fieldset>
+       <fieldset>
+        <label for="read" id="read">Read</label>
+        <input type="checkbox" id="check">
+       </fieldset>
+       <button id="submitBook" >Create book</button>
+    </form>
+</body>
+</html>
